@@ -14,7 +14,7 @@ Sub SendCalendar(strAdr, datBeg, datEnd)
 Dim olkApp, olkSes, olkCal, olkExp, olkMsg
 Set olkApp = CreateObject("Outlook.Application")
 Set olkSes = OlkApp.GetNameSpace("MAPI")
-olkSes.Logon "InDutyToday"
+olkSes.Logon "Default"
 Set olkCal = olkSes.GetDefaultFolder(olFolderCalendar)
 Set olkExp = olkCal.GetCalendarExporter
 With olkExp
